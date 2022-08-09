@@ -2,14 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/79e1cf96d2.js"
       crossorigin="anonymous"
@@ -24,24 +23,16 @@
       />
       <nav>
         <ul class="nav-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Books</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#books">Books</a></li>
           <li><a href="#">Wands</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="position-search">
-        <div class="search">
-          <input type="text" placeholder="Search" />
-          <div class="btn">
-            <i class="fas fa-search icon"></i>
-          </div>
-        </div>
-      </div>
       <section class="houses">
         <div class="size">
-          <div class="houses-1">
+          <div class="houses-images">
             <img
               src="./Images/Gryffindor-removebg-preview (1).png"
               class="gryffindor"
@@ -49,15 +40,15 @@
           </div>
         </div>
         <div class="size">
-          <div class="houses-1">
+          <div class="houses-images">
             <img
               src="./Images/Slytterin-removebg-preview.png"
-              class="slytterin"
+              class="slytherin"
             />
           </div>
         </div>
         <div class="size">
-          <div class="houses-1">
+          <div class="houses-images">
             <img
               src="./Images//Hufflepuff-removebg-preview.png"
               class="hufflepuff"
@@ -65,7 +56,7 @@
           </div>
         </div>
         <div class="size">
-          <div class="houses-1">
+          <div class="houses-images">
             <img
               src="./Images/image-removebg-preview (2).png"
               class="ravenclaw"
@@ -73,8 +64,17 @@
           </div>
         </div>
       </section>
-      <section class="cards"></section>
+      <select class="selector-options" id="selector-alphabetic">
+        <option value="" Select Default class="Order">Order</option>
+        <option value="az">A-Z</option>
+        <option value="za">Z-A</option>
+      </select>
+      <section class="cards">
+      </section>
     </main>
+      <footer>
+        <p>&copy;2022 Estefania Camargo and Luisacny Baudin. All rights reserved. </p>
+      </footer>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
