@@ -3,7 +3,7 @@
 }
 
 html, body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cinzel', serif;
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(./Images/fondo3.jpg);
+    background-image: url(./Images/fondo4.jpg);
     background-attachment: fixed;
 }
 
@@ -28,14 +28,15 @@ img {
     padding: 1rem;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1 rem;
     background-color: black;
     box-shadow: 2px 1px 5px black;
+    width: 100%;
 }
+
 .nav-list{
     list-style-type: none;
     display: flex;
@@ -45,8 +46,7 @@ header{
 }
 
 .nav-list li {
-    padding: 1 rem;
-    margin: 0 50px;
+    padding: 1rem 3rem;
 }
 
 .nav-list a {
@@ -58,45 +58,11 @@ main {
     padding: 2rem;
 }
 
-.position-search{
-    display: flex ;
-    justify-content: end;
-}
-
-.search {
-    position: relative;
-    padding: 5px;
-}
-
-.btn {
-    width: 50px;
-    height: 50px;
-    line-height: 55px;
-    top: 0;
-    right: 0;
-    position: absolute;
-    background: #9C7F35;
-    text-align: center;
-    color: white;
-    font-size: 18px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-.search input {
-    background-color: transparent;
-    width: 240PX;
-    height: 40px;
-    padding: 0 20px;
-    font-size: 18px;
-    color:#9C7F35;
-    outline:none;
-    border: 1px solid black;
-    border-radius: 30px;
-}
 
 .houses {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .size {
@@ -106,25 +72,15 @@ main {
     flex-direction: column;
 }
 
-.houses-1 {
+.houses-images {
     display: flex;
     flex-grow: 1;
+    transition: transform .2s ease;
+    cursor: pointer;
 }
 
-.gryffindor:hover {
-    -webkit-transform:scale(1.1);transform:scale(1.1);
-}
-
-
-.slytterin:hover {-webkit-transform:scale(1.1);transform:scale(1.1);}
-
-.hufflepuff:hover {
-    -webkit-transform:scale(1.1);transform:scale(1.1);
-}
-
-
-.ravenclaw:hover {
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+.houses-images:hover {
+    transform:scale(1.1);
 }
 
 .cards {
@@ -134,14 +90,72 @@ main {
     row-gap: 1rem;
 }
 
-.card-1{
+.card-1 {
+    background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: #E6D7BD;
     width: 100%;
     border-radius: 8px;
     padding: 1rem;
+    background-image: url(./Images/pergamino.png)
 }
 
 p {
     text-align:center;
 }
+
+
+.selector-options {
+    display: flex;
+    font-size: 1rem;
+    font-family: 'Cinzel', serif;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #E6D7BD;
+    box-shadow: 2px 1px 5px black;
+    color: #9C7F35;
+    width: 100%;
+    max-width: 150px;
+}
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 1px 5px black;
+    width: 100%;
+    background-color: black;
+    color: #9C7F35;
+}
+
+/* Responsive -------------------- */
+@media all and (max-width: 768px) {
+    html, body {
+        font-size: 16px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .nav-list li {
+        padding: 1rem;
+    }
+
+    .size {
+        padding: 0.5rem;
+        width: 50%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        column-gap: 1rem;
+    }
+
+
+}
+
