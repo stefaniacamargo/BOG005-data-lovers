@@ -1,81 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Harry Potter</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/79e1cf96d2.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <img
-        src="./Images/Logo4-removebg-preview (1).png"
-        alt="logo-harry"
-        class="logo-harry"
-      />
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Books</a></li>
-          <li><a href="#">Wands</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="position-search">
-        <div class="search">
-          <input type="text" placeholder="Search" />
-          <div class="btn">
-            <i class="fas fa-search icon"></i>
-          </div>
-        </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/79e1cf96d2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <img src="./Images/Logo4-removebg-preview (1).png" alt="logo-harry" class="logo-harry" />
+    <nav>
+      <ul class="nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#">Wands</a></li>
+        <li><a href="#"> Calculation</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="contenedorHome">
+      <div class="divImgPrincipal">
+        <img src="Images/fondodos-removebg-preview.png" alt="logo-two" class="logo-harryprincipal" width="80%"  height="80%"/>
       </div>
-      <section class="houses">
-        <div class="size">
-          <div class="houses-1">
-            <img
-              src="./Images/Gryffindor-removebg-preview (1).png"
-              class="gryffindor"
-            />
+      <p> On this page you can find information about the Harry Potter characters. ¡Click on each house and discover
+        the magic!
+      </p>
+      <div id="contents">
+        <input type="button" class="contents" id="contentsBtn" value="Welcome">
+      </div>
+    </section>
+
+        <section id="houses" class="contentsHouses">
+          <div id="buttonsHouse">
+            <div class="size">
+              <div class="houses-images">
+                <img src="./Images/Gryffindor-removebg-preview (1).png" class=" gryffindor"/>
+              </div>
+            </div>
+            <div class="size">
+              <div class="houses-images">
+                <img src="./Images/Slytterin-removebg-preview.png" class="slytherin" />
+              </div>
+            </div>
+            <div class="size">
+              <div class="houses-images">
+                <img src="./Images//Hufflepuff-removebg-preview.png" class="hufflepuff" />
+              </div>
+            </div>
+            <div class="size">
+              <div class="houses-images">
+                <img src="./Images/image-removebg-preview (2).png" class="ravenclaw" />
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="size">
-          <div class="houses-1">
-            <img
-              src="./Images/Slytterin-removebg-preview.png"
-              class="slytterin"
-            />
-          </div>
-        </div>
-        <div class="size">
-          <div class="houses-1">
-            <img
-              src="./Images//Hufflepuff-removebg-preview.png"
-              class="hufflepuff"
-            />
-          </div>
-        </div>
-        <div class="size">
-          <div class="houses-1">
-            <img
-              src="./Images/image-removebg-preview (2).png"
-              class="ravenclaw"
-            />
-          </div>
-        </div>
-      </section>
-      <section class="cards"></section>
-    </main>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+        </section>
+
+        <select class="selector-options" id="selector-alphabetic">
+          <option value="" Select>Order</option>
+          <option value="az">A-Z</option>
+          <option value="za">Z-A</option>
+        </select>
+        <section class="cards">
+        </section>
+      </div>
+  </main>
+  <footer>
+    <p>&copy;2022 Estefania Camargo and Luisacny Baudin. All rights reserved. </p>
+    <section class="socialR">
+      <a href="https://es-la.facebook.com/harrypottermovie/" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/harry_potter_tm?lang=es" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/harrypotterfilm/?hl=es" class="fa fa-instagram"></a>
+    </section>
+  </footer>
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

@@ -1,23 +1,19 @@
-import { example, anotherExample } from '../src/data.js';
+import {functionGryffindor} from '../src/data.js';
 
-
-describe('example', () => {
+const datosPrueba =[
+  {
+    name:"Euan Abercrombie",
+    house:"Gryffindor",
+    wands:null,
+    patronus:null,
+  },
+]
+describe('functionGryffindor', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof functionGryffindor).toBe('function');
   });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('returns `characters`', () => {
+    expect(functionGryffindor(datosPrueba, "house")).toEqual('');
   });
 });
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
+console.log(datosPrueba)
