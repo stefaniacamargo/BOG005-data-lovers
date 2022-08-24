@@ -96,9 +96,9 @@ export function renderStatistics() {
   container.innerHTML = `
     <h1>Some fun facts about the movie</h1>
     <div class="data-card">
-    <p>*¿Did you know that the ${calculationHuman(data)}% of living beings are Humans?</p>
-    <p>*The Muggle theme is quite critical in Harry Potter. ¿Did you know that in the entire saga only ${calculationAncestry(data)}% are Muggles?</p>
-    <p>*In the entire saga only ${calculationSex(data)}% are women </p>
+    <p>¿Did you know that the ${calculationHuman(data)}% of living beings are Humans?</p>
+    <p>The Muggle theme is quite critical in Harry Potter. ¿Did you know that in the entire saga only ${calculationAncestry(data)}% are Muggles?</p>
+    <p>In the entire saga only ${calculationSex(data)}% are women </p>
     <img src="./Images/d1728fec95a41a01c99aceead563c3bf.gif" class="img-statistics">
     </div>
   `;
